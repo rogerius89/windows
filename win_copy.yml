@@ -1,5 +1,5 @@
 ---
-- hosts: Windows
+- hosts: 192.168.178.2
   gather_facts: no
 
   tasks:
