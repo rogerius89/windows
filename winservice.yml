@@ -1,6 +1,7 @@
 - hosts: "{{ collection }}"
 
-- name: Check if a service is installed
-  win_service:
-    name: IP Helper
-  register: service_info
+- name: Run command that only runs if folder exists and runs from a specific folder
+  win_command: wbadmin -backupTarget:C:\backup\
+  args:
+    chdir: C:\somedir\
+    creates: C:\backup\
