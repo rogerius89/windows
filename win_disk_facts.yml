@@ -2,10 +2,12 @@
 - hosts: 192.168.178.2
 
   tasks:
+  
+  - name:  Get disk facts
+    win_disk_facts:
+    
+  - name:
+    debug:
+      var: ansible_facts.disks[0].size
 
-- name: Get disk facts
-  win_disk_facts:
-
-- name: Output first disk size
-  debug:
-    var: ansible_facts.disks[0].size
+   
