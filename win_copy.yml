@@ -4,12 +4,8 @@
 
   tasks:
 
-  - name: Copy File
-
-    win_copy:
-
-      src: C:\output.pdf
-
-      dest: C:\ansible_examples\
-
-      remote_src: yes
+- name: Copy a single file where the source is on the remote host
+  win_copy:
+    src: C:\output.pdf
+    dest: C:\ansible_examples\output.pdf
+    remote_src: yes
