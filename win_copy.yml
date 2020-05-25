@@ -1,4 +1,5 @@
-- host: winhost
+---
+- host: Windows
   gather_facts: no
 
   tasks:
