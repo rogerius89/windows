@@ -1,5 +1,5 @@
 ---
-- hosts: Windows
+- hosts: dc.automation.nl
   gather_facts: no
 
   tasks:
