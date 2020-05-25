@@ -1,4 +1,4 @@
-- hosts: 192.168.178.2
+- hosts: dc.automation.nl
 
   tasks:
 
