@@ -1,4 +1,4 @@
-- hosts: "{{ collection }}"
+- hosts: "{{ Windows }}"
 
 - name: Run command that only runs if folder exists and runs from a specific folder
   win_command: wbadmin -backupTarget:C:\backup\
