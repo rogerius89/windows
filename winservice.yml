@@ -1,3 +1,5 @@
+- hosts: "{{ collection }}"
+
 - name: Check if a service is installed
   win_service:
     name: IP Helper
