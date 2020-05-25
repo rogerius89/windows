@@ -1,5 +1,5 @@
 ---
-- hosts: Windows
+- hosts: Window
   gather_facts: no
 
   tasks:
